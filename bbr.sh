@@ -190,27 +190,5 @@ install_bbr() {
 
     install_config
 }
-
-clear
-echo "---------- System Information ----------"
-echo " OS      : $opsy"
-echo " Arch    : $arch ($lbit Bit)"
-echo " Kernel  : $kern"
-echo "----------------------------------------"
-echo " Auto install latest kernel for TCP BBR"
-echo
-echo " URL: https://teddysun.com/489.html"
-echo "----------------------------------------"
-echo
-echo "Press any key to start...or Press Ctrl+C to cancel"
-char=`get_char`
-
 install_bbr
-
-echo
-read -p "Info: The system needs to be restart. Do you want to reboot? [y/n]" is_reboot
-if [[ ${is_reboot} == "y" || ${is_reboot} == "Y" ]]; then
-    reboot
-else
-    exit
-fi
+reboot
