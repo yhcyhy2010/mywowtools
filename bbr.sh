@@ -192,5 +192,3 @@ install_bbr() {
 }
 
 install_bbr
-
-reboot
