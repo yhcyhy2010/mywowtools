@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 #
 # Auto install latest kernel for TCP BBR
@@ -192,9 +191,8 @@ install_bbr() {
     install_config
 }
 
-clear
+
 
 install_bbr
 
-echo
 reboot
